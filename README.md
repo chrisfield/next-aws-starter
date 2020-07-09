@@ -20,7 +20,7 @@ AWS_COGNITO_USER_POOL_ID="user_pool_id_here"
 AWS_COGNITO_APP_CLIENT_ID="app_client_id_here"
 ```
 
-Repeat the same the '.env.build'. This will be used when the next app is hosted on [now](https://zeit.co/)
+Repeat the same the '.env.build'. This will be used when the next app is hosted on [now](https://zeit.co/).
 
 
 #### run locally
