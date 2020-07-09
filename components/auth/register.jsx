@@ -25,6 +25,7 @@ const Register = () => {
   
   return (
     <Form onSubmit={handleSubmit}>
+      Enter you info:
       <Input
         name="username"
         id="login-username"

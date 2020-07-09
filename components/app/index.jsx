@@ -1,5 +1,4 @@
 import Amplify, { Auth } from 'aws-amplify';
-import { useRouter } from 'next/router';
 import React, { createContext, useContext, useState, useEffect } from 'react';
 import getConfig from '../../get-config.js';
 import Toolbar from './toolbar';
@@ -26,8 +25,6 @@ export const useApp = () => {
 const App = ({ children }) => {
   const [ user, setUser ] = useState();
   const [ hideUserInToolbar, setHideUserInToolbar ] = useState(false);
-  const { pathname } = useRouter();
-  console.log('pathname',pathname);
   useEffect(() => {
     (async () => {
       const user = await Auth.currentAuthenticatedUser();
